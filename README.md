@@ -3,7 +3,7 @@
 
 #### Contents
 
-- This directory is organised as:
+- This repository is organised as:
     
 ```
     ls
