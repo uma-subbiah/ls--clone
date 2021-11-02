@@ -1,7 +1,5 @@
 # An implementation of a clone of the Unix command -ls
 
-### October 2021
-### Uma Subbiah
 
 #### Contents
 
