@@ -27,45 +27,42 @@ Longer arguments are input by 2 hyphens Eg., --time-style , --help , etc. Format
 
 #### Description
 
-ls 0.1.0
+    ls 0.1.0
 
-*USAGE:*
 
-    ls [FLAGS] [OPTIONS] [dir]
+    FLAGS:
 
-*FLAGS:*
+    1.         --atime             Sort by and display access time
+    2.     -a                      Prints all entries, doesn't ignore those beginning with 
+    3.     -A                      Prints almsot all entries, except those beginning with . or ..
+    4.         --author            Prints tha author of each file, set by default
+    5.     -m                      Prints list as comma separated values
+    6.     -c                      Sort the files by the date created
+    7.     -s, --size              Prints the allocated size of each file
+    8.         --help              Prints help information
+    9.     -h, --human-readable    Human readable format, set by default
+    10.     -i, --inode             Shows the time of creation instead of last modified time
+    11.     -l                      List all the details of the file
+    12.     -t                      Sorts files by the last-modified time
+    13.     -n, --name              Sorts files alphabetically by filename
+    14.     -U                      Doesn't sort, prints in the directory order (default)
+    15.     -f                      Don not sort entries
+    16.     -1                      Prints file names one per line
+    17.     -d, --directory         Only list directories
+    18.     -Q, --quote-name        Prints file names in quotes
+    19.     -R, --recursive         Print files recursively
+    20.     -r, --reverse           Print files in the reverse order - best used with a sort option
+    21.     -S                      Sorts files by file size
+    22.     -V, --version           Prints version information
 
-1.         --atime             Sort by and display access time
-2.     -a                      Prints all entries, doesn't ignore those beginning with 
-3.     -A                      Prints almsot all entries, except those beginning with . or ..
-4.         --author            Prints tha author of each file, set by default
-5.     -m                      Prints list as comma separated values
-6.     -c                      Sort the files by the date created
-7.     -s, --size              Prints the allocated size of each file
-8.         --help              Prints help information
-9.     -h, --human-readable    Human readable format, set by default
-10.     -i, --inode             Shows the time of creation instead of last modified time
-11.     -l                      List all the details of the file
-12.     -t                      Sorts files by the last-modified time
-13.     -n, --name              Sorts files alphabetically by filename
-14.     -U                      Doesn't sort, prints in the directory order (default)
-15.     -f                      Don not sort entries
-16.     -1                      Prints file names one per line
-17.     -d, --directory         Only list directories
-18.     -Q, --quote-name        Prints file names in quotes
-19.     -R, --recursive         Print files recursively
-20.     -r, --reverse           Print files in the reverse order - best used with a sort option
-21.     -S                      Sorts files by file size
-22.     -V, --version           Prints version information
+    OPTIONS:
+            --sort <sort>                Takes as input the criteria to sort based on [default: create]
+            --time-style <time-style>    Formats the time output, options are Rust time formats like %Y-%m-%d %H:%M:%S
+                                        (default), %b %e %H:%M , %a %b %e %T %Y and rearranged variants [default: %Y-%m-%d
+                                        %H:%M:%S]
 
-*OPTIONS:*
-        --sort <sort>                Takes as input the criteria to sort based on [default: create]
-        --time-style <time-style>    Formats the time output, options are Rust time formats like %Y-%m-%d %H:%M:%S
-                                    (default), %b %e %H:%M , %a %b %e %T %Y and rearranged variants [default: %Y-%m-%d
-                                    %H:%M:%S]
-
-*ARGS:*
-        <dir>    Takes the directory to be listed from cmd line [default: .]
+    ARGS:
+            <dir>    Takes the directory to be listed from cmd line [default: .]
 
 
 #### Dependencies:
